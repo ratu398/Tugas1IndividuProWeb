@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <form action="#">
+
+    <fieldset>
+        <legend>Akun</legend>
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="username" name="nama_pengguna" id="username"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="sandi" id="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="konfirmasi">Konfirmasi Password</label></td>
+                <td><input type="password" name="sandi" id="konfirmasi"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td><textarea id="alamat" name="alamat" rows="4" cols="50"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Data</legend>
+        <table>
+            <tr>
+                <td><label for="name">Nama</label></td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" id="Pria" name="jenis_kelamin" value="Pria"><label for="Pria">Pria</label><br>
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="wanita"><label for="wanita">Wanita</label><br>
+                    <input type="radio" id="lainnya" name="jenis_kelamin" value="lainnya"><label for="lainnya">Lainnya</label>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="informasi">Hobi</label><br>
+                <td><label for="Bernyanyi"><input type="checkbox" id="Bernyanyi" name="informasi" value="Bernyanyi">Bernyanyi</label><br>
+                <label for="Menulis"><input type="checkbox" id="Menulis" name="informasi" value="Menulis">Menulis</label><br>
+                <label for="Beribadah"><input type="checkbox" id="Beribadah" name="informasi" value="Beribadah">Beribadah</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Pilih Program Studi</label></td>
+                <td>
+                    <select id="jurusan" name="jurusan">
+                        <option value="pilih">Pilih Program Studi</option>
+                        <optgroup Label="S1">
+                            <option value="S1 Ilmu Komputer">S1 Ilmu Komputer</option>
+                            <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+                        </optgroup>
+                        <optgroup Label="S2">
+                            <option value="S2 Teknik Informatika">S2 Teknik Informatika</option>
+                            <option value="S2 Sains Data dan Kecerdasan Buatan">S2 Sains Data dan Kecerdasan Buatan</option>
+                        </optgroup>
+                        <optgroup Label="S3">
+                            <option value="S3 Ilmu Komputer">S3 Ilmu Komputer</option>
+                        </optgroup>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
