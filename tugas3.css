@@ -1,0 +1,26 @@
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #f4a9d2;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+        }
+        button {
+            width: 50px;
+            height: 45px;
+            font-size: 25px;
+            margin: 5px;
+        }
+        </style>

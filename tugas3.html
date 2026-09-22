@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="tugas3.css"/>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>KALKULATOR</h1>
+            <table>
+                <tr>
+                    <td>Input Bilangan 1</td>
+                    <td><input type="number" id="bil1"></td>
+                </tr>
+                <tr>
+                    <td>Input Bilangan 2</td>
+                    <td><input type="number" id="bil2"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button onclick="hitung('+')">+</button>
+                        <button onclick="hitung('-')">-</button>
+                        <button onclick="hitung('*')">*</button>
+                        <button onclick="hitung('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Output</td>
+                    <td><input type="text" id="hasil" readonly></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function hitung(operasi) {
+            let a = parseFloat(document.getElementById('bil1').value);
+            let b = parseFloat(document.getElementById('bil2').value);
+            let hasil;
+
+            if (operasi == '+') {
+                hasil = a + b;
+            } else if (operasi == '-') {
+                hasil = a - b;
+            } else if (operasi == '*') {
+                hasil = a * b;
+            } else if (operasi == '/') {
+                hasil = a / b;
+            }
+
+        document.getElementById('hasil').value = hasil;
+        }
+        </script>
+</body>
+</html>
