@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="stylebootstrap.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <img src="logo.png" alt="Logo Proweb" height="70">
+  <div class="container-fluid">
+    <div class="col ms-auto"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profil</a>
+        </li>
+        
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tugas
+          </a>
+
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tugas1.html">Tugas 1</a></li>
+            <li><a class="dropdown-item" href="tugas2.html">Tugas 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="tugas3.html">Tugas 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Hubungi</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success" type="submit">Daftar</button>
+        <button class="btn btn-primary" type="submit">Masuk</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="row">
+  <div class="col align-self-center">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">
+      Hai! <br> Selamat datang di Proweb
+    </h1>
+    <p class="mt-3 mb-4">
+      Belajar pemrograman web mulai dari HTML, CSS, JavaScripy, PHP, dan MySQL
+    </p>
+    <a href="#" class="btn btn-success">Mulai Belajar</a>
+  </div>
+  <div class="col mt-4 d-none d-md-block d-lg-block d-x1-block">
+    <img src="programming.jpg" alt="Gambar" class="hero-img" width="600">
+  </div>
+</div>
+
+<br><br><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="upin4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kembar dan Sahabatnya</h5>
+        <p class="card-text">Upin Ipin Berfoto bersama Sahabat</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="upin1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kesayangan Ayah Bunda</h5>
+        <p class="card-text">Upin Ipin Sayang Ayah Bunda</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="upin2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Susanti Menangis</h5>
+        <p class="card-text">Si Kembar Ganggu Susanti</p>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+</div>
+
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

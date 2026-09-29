@@ -1,0 +1,820 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background: white;
+    color: #172338;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 70px;
+
+    background: white;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-area {
+    position: relative;
+    width: 230px;
+    height: 100px;
+}
+
+
+/* bentuk pink di belakang LOGO */
+.logo-shape {
+    position: absolute;
+
+    top: 10px;
+    left: 5px;
+
+    width: 200px;
+    height: 62px;
+
+    background: #ffb6d0;
+
+    border-radius: 25px;
+
+    transform: rotate(-2deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo-text {
+    font-family: "Pacifico", cursive;
+    font-size: 38px;
+
+    color: #07182d;
+
+    margin-top: -2px;
+}
+
+
+.logo-subtitle {
+    position: absolute;
+
+    left: 57px;
+    top: 77px;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #607087;
+}
+
+
+/* dekorasi logo */
+
+.logo-dot {
+    position: absolute;
+
+    width: 11px;
+    height: 11px;
+
+    background: #ef79a5;
+
+    border-radius: 50%;
+}
+
+
+.dot-1 {
+    top: 27px;
+    left: -12px;
+}
+
+
+.dot-2 {
+    top: 54px;
+    right: 10px;
+}
+
+
+.logo-line {
+    position: absolute;
+
+    width: 9px;
+    height: 27px;
+
+    background: #ef79a5;
+
+    border-radius: 5px;
+
+    top: -5px;
+    right: 22px;
+
+    transform: rotate(25deg);
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.nav-menu a,
+.dropdown-btn {
+    text-decoration: none;
+
+    color: #43516a;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.nav-menu a:hover,
+.dropdown-btn:hover {
+    color: #168c54;
+}
+
+
+/* ==============================
+   DROPDOWN
+============================== */
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 0;
+
+    background: none;
+    border: none;
+
+    color: #43516a;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+
+.dropdown-btn:hover {
+    color: #168c54;
+}
+
+
+.arrow {
+    font-size: 18px;
+}
+
+
+/* Isi dropdown */
+
+.dropdown-content {
+    position: absolute;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    padding: 8px 0;
+
+    display: none;
+
+    z-index: 9999;
+}
+
+
+/* Dropdown dibuka */
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+.dropdown-content a {
+    display: block;
+
+    padding: 11px 18px;
+
+    color: #43516a !important;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.dropdown-content a:hover {
+    background: #fff1f6;
+
+    color: #e76596 !important;
+}
+
+/* =====================================================
+   BUTTON DAFTAR
+===================================================== */
+
+.btn-daftar {
+    padding: 14px 32px;
+
+    border: 2px solid #e2a1e4;
+
+    border-radius: 5px;
+
+    color: #fc9bee !important;
+
+    font-weight: 600 !important;
+}
+
+
+.btn-daftar:hover {
+    background: #ecb3e8;
+    color: white !important;
+}
+
+/* =====================================================
+   BUTTON MASUK
+===================================================== */
+
+.btn-masuk {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 35px;
+
+    background-color: #f0a3f4 !important;
+    color: #ffffff !important;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    box-shadow: 0 7px 15px rgba(250, 154, 251, 0.25);
+
+    cursor: pointer;
+}
+
+
+.btn-masuk:hover {
+    background-color: #0865d0 !important;
+    color: #ffffff !important;
+}
+
+
+.btn-masuk:focus,
+.btn-masuk:active,
+.btn-masuk:visited {
+    background-color: #f197ce !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: calc(100vh - 120px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 70px 70px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HERO KIRI
+===================================================== */
+
+.hero-content {
+    width: 50%;
+
+    padding-left: 5px;
+
+    z-index: 2;
+}
+
+
+.hero-content h1 {
+    font-family: "Pacifico", cursive;
+
+    font-size: 58px;
+
+    line-height: 1.35;
+
+    font-weight: 400;
+
+    color: #172338;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-content h1 span {
+    display: block;
+
+    font-size: 55px;
+
+    margin-bottom: -5px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    color: #607087;
+
+    margin-bottom: 32px;
+}
+
+
+/* =====================================================
+   BUTTON MULAI SEKARANG
+===================================================== */
+
+.btn-mulai {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 17px 28px;
+
+    background: #e797bc;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    box-shadow: 0 8px 18px rgba(18, 184, 93, 0.2);
+}
+
+
+.btn-mulai:hover {
+    background: #ea9dcb;
+}
+
+
+.btn-mulai span {
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   HERO ILUSTRASI
+===================================================== */
+
+.hero-illustration {
+    width: 50%;
+
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+   GAMBAR ILUSTRASI
+
+   PENTING:
+   Tidak ada background pink besar
+   di belakang gambar.
+*/
+
+.hero-image {
+    position: relative;
+
+    width: 650px;
+    max-width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   DEKORASI KANAN
+===================================================== */
+
+
+/* Posisi Gambar */
+
+.decor-circle {
+    position: absolute;
+
+    width: 68px;
+    height: 68px;
+}
+
+
+
+
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.mobile-menu {
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #172338;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 25px 40px;
+    }
+
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+
+    .nav-menu a,
+    .dropdown-btn {
+        font-size: 16px;
+    }
+
+
+    .hero {
+        padding: 40px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+
+    .hero-content h1 span {
+        font-size: 45px;
+    }
+
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+
+    .hero-image {
+        width: 560px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET KECIL
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 90px;
+
+        padding: 15px 25px;
+    }
+
+
+    .logo-area {
+        transform: scale(0.8);
+
+        transform-origin: left center;
+    }
+
+
+    .mobile-menu {
+        display: block;
+    }
+
+
+    .nav-menu {
+        position: absolute;
+
+        top: 90px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        padding: 20px;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+        z-index: 99;
+    }
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+    .dropdown-content {
+        position: static;
+
+        width: 200px;
+
+        box-shadow: none;
+
+        border: 1px solid #eee;
+
+        margin-top: 10px;
+    }
+
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 50px 25px;
+
+        text-align: center;
+    }
+
+
+    .hero-content {
+        width: 100%;
+
+        padding: 0;
+    }
+
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-content h1 span {
+        font-size: 42px;
+    }
+
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+
+    .hero-content p br {
+        display: none;
+    }
+
+
+    .hero-illustration {
+        width: 100%;
+
+        min-height: 400px;
+
+        margin-top: 40px;
+    }
+
+
+    .hero-image {
+        width: 550px;
+
+        max-width: 95%;
+    }
+
+
+    .decor-circle {
+        right: 5%;
+        top: 10px;
+    }
+
+
+    .decor-triangle {
+        left: 5%;
+        top: 80px;
+    }
+
+
+    .decor-lines {
+        right: 5%;
+        top: 120px;
+    }
+
+}
+
+
+/* =====================================================
+   HP
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 18px;
+    }
+
+
+    .logo-area {
+        transform: scale(0.65);
+
+        transform-origin: left center;
+
+        width: 190px;
+    }
+
+
+    .hero {
+        padding: 35px 18px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 36px;
+
+        line-height: 1.3;
+    }
+
+
+    .hero-content h1 span {
+        font-size: 35px;
+    }
+
+
+    .hero-content p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    .btn-mulai {
+        font-size: 16px;
+
+        padding: 14px 22px;
+    }
+
+
+    .hero-illustration {
+        min-height: 300px;
+
+        margin-top: 20px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .decor-circle {
+        width: 45px;
+        height: 45px;
+
+        border-width: 6px;
+
+        right: 0;
+    }
+
+
+    .decor-triangle {
+        transform: scale(0.7);
+    }
+
+
+    .decor-lines {
+        transform: rotate(-25deg) scale(0.7);
+
+        right: -5px;
+    }
+
+}
+
+
+/* =====================================================
+   HP KECIL
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .hero-content h1 {
+        font-size: 31px;
+    }
+
+
+    .hero-content h1 span {
+        font-size: 30px;
+    }
+
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+
+    .hero-illustration {
+        min-height: 260px;
+    }
+
+}
